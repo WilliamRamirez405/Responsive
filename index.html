@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Oats Recipe</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #329bb6;
+            color: white;
+            text-align: left;
+            padding: 20px;
+            border-bottom: 5px solid #329bb6; /* Añadido color al borde */
+            nav {
+            display: flex;
+            justify-content: right;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            background-color: #2f0ab6;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .recipe {
+            background-color: #e8f5e9; /* Verde claro */
+            border: 3px solid #329bb6; /* Borde verde */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex: 1 1 100%;
+        }
+
+        .recipe h2 {
+            margin-top: 0;
+            color: #329bb6;
+        }
+
+        .recipe h3 {
+            margin-top: 0;
+            color: #329bb6;
+        }
+
+        
+
+        .recipe ul {
+            padding-left: 20px;
+        }
+
+        .sticky-btn {
+            position: sticky;
+            top: 20px;
+            background-color: #FF9800;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 2px solid #E64A19; /* Borde naranja oscuro */
+        }
+
+        .sticky-btn:hover {
+            background-color: #e68900;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #fbe9e7; /* Fondo rosa claro */
+            border: 3px solid #FFAB91; /* Borde rosa oscuro */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product {
+            text-align: center;
+            max-width: 200px;
+            margin: 10px;
+            border: 2px solid #FF8A65; /* Borde alrededor de cada producto */
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #FFE0B2; /* Fondo amarillo claro */
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #FF7043; /* Borde naranja oscuro para las imágenes */
+        }
+
+        @media (max-width: 500px) {
+            .products {
+                flex-direction: column;
+            }
+
+            .product {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cool Oats</h1>
+        <nav> 
+            <a href="#about">About</a>
+            <a href="#recipe">Recipe</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Sección de la receta -->
+        <section class="recipe">
+            <h2>Overnight Oats Recipe</h2>
+            <p><strong>Prep Time:</strong> 2 minutes</p>
+            <p><strong>Yield:</strong> 1 large serving or 2 small servings</p>
+            <p><strong>Rating:</strong> 4.5 stars</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1/3 cup plain Greek yogurt</li>
+                <li>1/2 cup rolled oats (heaping)</li>
+                <li>2/3 cup unsweetened milk of choice</li>
+                <li>1 tablespoon chia seeds or ground flaxmeal</li>
+                <li>1/2 teaspoon vanilla extract</li>
+                <li>Pinch of salt</li>
+                <li>0–2 tablespoons honey or maple syrup</li>
+            </ul>
+            <h3>Instructions</h3>
+            <p>1. Whisk together all ingredients in a medium-sized mixing bowl. Spoon into a jar with a tight-fitting lid. </p> 
+            <p>2.  Close and refrigerate for at least 4 hours, preferably overnight before eating.</p>
+            <h3>Suggested Dietary Swaps</h3>
+            <h3>Vegan</h3>
+            <li>Use plant-based milk, plant-based yogurt, and maple siyup for sweetener</li>
+            <h3>Sugar Free</h3>
+            <li>Drop the sweetener and add 1/2 mashep ripe banana</li>
+            <h3>Gluten Free</h3>
+            <li>Use gluten free oats</li>
+
+
+            <button class="sticky-btn">Print Recipe</button>
+        </section>
+
+        <!-- Sección de productos recomendados -->
+        <section class="products">
+            <div class="product">
+                <img src="oats.jpg" alt="Rolled Oats">
+                <p>Rolled Oats</p>
+                <p><strong>$12.99</strong></p>
+            </div>
+            <div class="product">
+                <img src="chia.jpg" alt="Chia Seeds">
+                <p>Chia Seeds</p>
+                <p><strong>$15.99</strong></p>
+            </div>
+            <div class="product">
+                <img src="pecans.jpg" alt="Pecans">
+                <p>Pecans</p>
+                <p><strong>$13.99</strong></p>
+            </div>
+            <div class="product">
+                <img src="maple-syrup.jpg" alt="Maple Syrup">
+                <p>Maple Syrup</p>
+                <p><strong>$15.99</strong></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
